@@ -1,8 +1,48 @@
 /* Universal Styling */
-* {
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    --bg-color: #646881;
+    --txt-color: #C3BEF7;
+}
+
+/* Header Styling */
+.header {
+    background-color: var(--bg-color);
+}
+
+.welcome_txt {
+    display: flex;
+    justify-content: center;
+    color: var(--txt-color);
+    font-size: 1rem;
+}
+
+/* Button Styling */
+.book_btn_box {
+    margin: 0 auto;
+    display: block;
+}
+
+.book_btn {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    margin-top: 25px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 5px;
 }
 
 /* Footer Styling */
+.footer {
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
