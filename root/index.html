@@ -15,10 +15,52 @@
     <h1 class="welcome_txt">Welcome to Personal Library!</h1>
 </header>
 <body>
-    
-    <div class="book_btn_box"></div>
-    <button class="book_btn" id="book_btn">Add a book</button>
-    </div>
+    <main class="book_btn_box">
+    <button onclick="addBookBtn()" class="book_btn" id="book_btn">Add a book</button>
+    </main>
+
+    <form>
+        <input
+            class="input"
+            type="text"
+            id="title"
+            placeholder="Book Title"
+            required
+            maxlength="75"
+            /> <br>
+        <input
+            class="input"
+            type="text"
+            id="author"
+            placeholder="Author"
+            required
+            maxlength="75"
+            /> <br>        
+        <input
+            class="input"
+            type="text"
+            id="page_count"
+            placeholder="Page Count"
+            required
+            max="100000"
+            />
+        <div class="recommend">
+            <label for="recommend">Would you recommend this book?</label>
+            <input class="checkbox" type="checkbox" id="recommend" />
+        </div>
+        
+        <button class="btn btn-light-green" type="submit">Submit</button>
+        
+        
+
+
+
+
+
+
+
+
+    </form>
 
     <footer class="footer">
         &copy; 2022: Handcrafted by <a href=https://www.github.com/t-michael>t-michael</a> &#128125
