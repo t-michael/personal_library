@@ -9,6 +9,15 @@
     --link-text-color: #FFFFFF;
 }
 
+a {
+    text-decoration: none;
+    list-style: none;
+}
+
+::placeholder {
+    color: var(--txt-color);
+}
+
 /* Header Styling */
 .header {
     background-color: var(--bg-color);
@@ -40,6 +49,33 @@
     border-radius: 5px;
 }
 
+/* Cancel & Submit Buttons */
+.cnl_btn, .submit_btn {
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 5px;
+        margin: 2px;
+        margin-bottom: 5px;
+        font-size: 20px;  
+        background-color: var(--bg-color);
+        color: var(--txt-color);
+}
+
+/* Add Book Container */
+.add_book_container, .add_book_container > form > input {
+    border: 2px solid black;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+    background-color: var(--bg-color);
+    color: var(--txt-color);
+}
+
+.input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
 /* Footer Styling */
 .footer {
     background-color: var(--bg-color);
@@ -57,4 +93,3 @@
 .footer > a:hover {
     color: var(--link-text-color);
 }
-

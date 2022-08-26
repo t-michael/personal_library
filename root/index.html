@@ -19,7 +19,16 @@
     <button onclick="addBookBtn()" class="book_btn" id="book_btn">Add a book</button>
     </main>
 
+    <div class="add_book_container" id="add_book_container">
     <form>
+        <input
+        class="input"
+        type="text"
+        id="author"
+        placeholder="Author"
+        required
+        maxlength="75"
+        /> <br> 
         <input
             class="input"
             type="text"
@@ -27,15 +36,7 @@
             placeholder="Book Title"
             required
             maxlength="75"
-            /> <br>
-        <input
-            class="input"
-            type="text"
-            id="author"
-            placeholder="Author"
-            required
-            maxlength="75"
-            /> <br>        
+            /> <br>   
         <input
             class="input"
             type="text"
@@ -45,22 +46,16 @@
             max="100000"
             />
         <div class="recommend">
-            <label for="recommend">Would you recommend this book?</label>
-            <input class="checkbox" type="checkbox" id="recommend" />
+            <p>Would you recommend this book?</p>
+            <input type="checkbox" id="rec_yes" name="rec_yes" value="Yes">
+            <label for="rec_yes">Yes</label><br>
+            <input type="checkbox" id="rec_no" name="rec_no" value="No">
+            <label for="rec_no">No</label><br>
         </div>
-        
-        <button class="btn btn-light-green" type="submit">Submit</button>
-        
-        
-
-
-
-
-
-
-
-
+        <a href="#" class="cnl_btn">Cancel</a>
+        <button class="submit_btn" type="submit">Submit</button>
     </form>
+</div>
 
     <footer class="footer">
         &copy; 2022: Handcrafted by <a href=https://www.github.com/t-michael>t-michael</a> &#128125
