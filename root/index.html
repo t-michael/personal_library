@@ -15,9 +15,9 @@
     <h1 class="welcome_txt">Welcome to Personal Library!</h1>
 </header>
 <body>
-    <main class="book_btn_box">
+    <section class="book_btn_box">
     <button onclick="addNewBook()" class="add_new_book" id="add_new_book">Add a book</button>
-    </main>
+    </section>
 
     <div class="add_book_form_container" id="add_book_form_container" style="display:none">
     <form class="add_book_form" id="add_book_form">
@@ -52,10 +52,14 @@
             <input type="checkbox" id="rec_no" name="rec_no" value="No">
             <label for="rec_no">No</label><br>
         </div>
-        <a href="#" class="cnl_btn">Cancel</a>
+        <a href="/root/index.html" class="cnl_btn" id="cnl_btn">Cancel</a>
         <button class="submit_btn" type="submit">Submit</button>
     </form>
 </div>
+
+<article class="library_wrapper" id="library_wrapper">
+    <div class="book_card" id="book_card"></div>
+</article>
 
     <footer class="footer">
         &copy; 2022: Handcrafted by <a href=https://www.github.com/t-michael>t-michael</a> &#128125

@@ -8,6 +8,12 @@ let userLibrary = [];
 function Book(author, pageCount, bookTitle) {
 }
 
+// Add a Book to Library
+function addBookToLibrary() {
+   
+}
+
+// Add a Book Form
 function addNewBook() {
         if (bookForm.style.display === "none") {
             bookForm.style.display = "block";
@@ -15,3 +21,4 @@ function addNewBook() {
             bookForm.style.display = "none";
         }
     };
+

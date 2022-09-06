@@ -76,6 +76,12 @@ a {
     color: var(--txt-color);
 }
 
+/* Book Card */
+.book_card {
+    border: 2px solid black;
+    height: 100px;
+}
+
 /* Footer Styling */
 .footer {
     background-color: var(--bg-color);
