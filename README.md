@@ -1,1 +1,1 @@
-# personal_library
+# Personal_Library: an application dedicated to making it easier to track your book collection!
