@@ -4,6 +4,20 @@ const addBookBtn = document.getElementById("add_new_book");
 // Create library array
 let userLibrary = [];
 
+const addBookToLibrary = (ev) => {
+    ev.preventDefault();
+    let newBook = {
+        author: document.getElementById("#author").value,
+        title: document.getElementById("#title").value,
+        pageCount: document.getElementById("#page_count").value,
+        recYes: document.getElementById("#rec_yes").value,
+        recNo: document.getElementById("#rec_no").value
+    }
+    userLibrary.push(newBook);
+
+    console.log("added", {userLibrary});
+}
+
 // Book constructor
 function Book(author, pageCount, bookTitle) {
     this.author = author
@@ -12,21 +26,9 @@ function Book(author, pageCount, bookTitle) {
 }
 
 // Add a book to library
-function addBookToLibrary() {
-   const userInput = document.getElementById("submit_btn").value;
+// function addBookToLibrary() {
 
-   userLibrary.push(submit_btn);
-
-   const cur_library = "";
-
-   for(i = 0; i < userLibrary.length; i++) {
-    cur_library = cur_library + userLibrary[i];
-   }
-
-   document.getElementById("book_card").textContent = cur_library;
-   console.log(cur_library);
-   console.log(userLibrary);
-}
+// }
 
 // Add a book form
 function addNewBook() {
