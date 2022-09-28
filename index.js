@@ -4,7 +4,7 @@ const addBookBtn = document.getElementById("add_new_book");
 // Create library array
 let userLibrary = [];
 
-const addBookToLibrary = (ev) => {
+function addBookToLibrary (ev) {
     ev.preventDefault();
     let newBook = {
         author: document.getElementById("#author").value,
@@ -15,7 +15,8 @@ const addBookToLibrary = (ev) => {
     }
     userLibrary.push(newBook);
 
-    console.log("added", {userLibrary});
+    console.log(userLibrary);
+    document.getElementById("#add_book_form").reset();
 }
 
 // Book constructor
