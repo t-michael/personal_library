@@ -1,23 +1,31 @@
-const bookForm = document.getElementById("add_book_form_container");
-const addBookBtn = document.getElementById("add_new_book");
-
 // Create library array
 let userLibrary = [];
 
-function addBookToLibrary (ev) {
-    ev.preventDefault();
+const bookForm = document.getElementById("add_book_form_container");
+const addBookBtn = document.getElementById("add_new_book");
+const submitBook = document.getElementById("submit_btn");
+submitBook.addEventListener("click", addBookToLibrary());
+
+// Add a book to the library
+function addBookToLibrary () {
     let newBook = {
-        author: document.getElementById("#author").value,
-        title: document.getElementById("#title").value,
-        pageCount: document.getElementById("#page_count").value,
-        recYes: document.getElementById("#rec_yes").value,
-        recNo: document.getElementById("#rec_no").value
+        author: document.getElementById("book_author").value,
+        title: document.getElementById("book_title").value,
+        pageCount: document.getElementById("page_count").value,
+        recYes: document.getElementById("rec_yes").value,
+        recNo: document.getElementById("rec_no").value
     }
     userLibrary.push(newBook);
-
-    console.log(userLibrary);
-    document.getElementById("#add_book_form").reset();
 }
+
+// Add a book form
+// function addNewBook() {
+//     if (bookForm.style.display === "none") {
+//         bookForm.style.display = "block";
+//     } else {
+//         bookForm.style.display = "none";
+//     }
+// };
 
 // Book constructor
 function Book(author, pageCount, bookTitle) {
@@ -26,17 +34,4 @@ function Book(author, pageCount, bookTitle) {
     this.bookTitle = bookTitle
 }
 
-// Add a book to library
-// function addBookToLibrary() {
-
-// }
-
-// Add a book form
-function addNewBook() {
-        if (bookForm.style.display === "none") {
-            bookForm.style.display = "block";
-        } else {
-            bookForm.style.display = "none";
-        }
-    };
-
+console.log(userLibrary);

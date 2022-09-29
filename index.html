@@ -16,15 +16,15 @@
 </header>
 <body>
     <section class="book_btn_box">
-    <button onclick="addNewBook()" class="add_new_book" id="add_new_book">Add a book</button>
+    <button class="add_new_book" id="add_new_book">Add a book</button>
     </section>
 
-    <div class="add_book_form_container" id="add_book_form_container" style="display:none">
+    <div class="add_book_form_container" id="add_book_form_container">
     <form class="add_book_form" id="add_book_form">
         <input
         class="input"
         type="text"
-        id="author"
+        id="book_author"
         placeholder="Author"
         name="book_author"
         required
@@ -33,7 +33,7 @@
         <input
             class="input"
             type="text"
-            id="title"
+            id="book_title"
             placeholder="Book Title"
             name="book_title"
             required
@@ -56,7 +56,7 @@
             <label for="rec_no">No</label><br>
         </div>
         <a href="https://t-michael.github.io/personal_library/" class="cnl_btn" id="cnl_btn">Cancel</a>
-        <button class="submit_btn" id="submit_btn" type="submit" onclick="addBookToLibrary()">Submit</button>
+        <button class="submit_btn" id="submit_btn" type="submit">Submit</button>
     </form>
 </div>
 
