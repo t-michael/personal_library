@@ -7,7 +7,6 @@ const submitBook = document.getElementById("submit_btn");
 submitBook.addEventListener("click", addBookToLibrary());
 bookForm.addEventListener("click", addNewBook, false);
 
-
 // Add a book to the library
 function addBookToLibrary () {
     let newBook = {
