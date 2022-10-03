@@ -1,11 +1,12 @@
 // Create library array
 let userLibrary = [];
 
+const bookBtn = document.getElementById("add_new_book");
 const bookForm = document.getElementById("add_book_form_container");
 const addBookBtn = document.getElementById("add_new_book");
 const submitBook = document.getElementById("submit_btn");
 submitBook.addEventListener("click", addBookToLibrary());
-bookForm.addEventListener("click", addNewBook, false);
+bookBtn.addEventListener("click", addNewBook);
 
 // Add a book to the library
 function addBookToLibrary () {
