@@ -1,4 +1,4 @@
-// Create library array
+// Create user library array
 let userLibrary = [];
 
 const bookBtn = document.getElementById("add_new_book");
